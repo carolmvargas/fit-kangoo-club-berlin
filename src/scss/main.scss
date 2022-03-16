@@ -1,0 +1,316 @@
+// This is where you can import other stylesheets or write your scss code
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+  $primary: white,
+);
+
+//bodyAll
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  margin:1em 0em;
+  text-align: center;
+  font-size: 2em;
+  color: #0078ab;
+}
+.subtitle-home {
+  font-family:'Bebas Neue', cursive;
+}
+p {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 2em;
+}
+li {
+  line-height: 2em;
+  text-align: justify;
+}
+.logo {
+  width: 13em;
+}
+h5 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2em;
+  color: #0078ab;
+} 
+h4 {
+  font-size: 1.7em;
+  color:#0078ab
+}
+.covid {
+  li {
+    padding: 0.8em;
+  }
+}
+
+//mixin
+@mixin padding {
+  padding: 0px 200px 30px 200px;
+} 
+//main
+.text-padding {
+  padding: 0 20px 30px 20px;
+}
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .text-padding-cards {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+  .card-l-padding {
+    @include padding;
+    padding-top: 50px;
+  }
+  .text-padding {
+    @include padding;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  
+}
+
+//navStyle
+nav  {
+  background-color: none;
+  li {
+    margin-left:2em;
+}
+  a {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5em;
+  &:hover {
+    color: #0078ab !important;
+  }
+  i {
+    vertical-align: 20px;
+    padding-top: 2px;
+    color: black
+  }
+} 
+} 
+.kangooicon {
+  width: 30px;
+}
+
+//home
+.vorteile {
+  li {
+    font-size: 1.3em;
+  }
+  li::before {
+  font-family: "FontAwesome";
+  content:"\f00C";
+  color:#0078ab;
+  padding: 1em;
+}}
+
+.btn_color_dci {
+  background-color: #0078ab !important;
+}
+
+.i_anfahrt {
+  font-size: 3em;
+  color: #0078ab;
+}
+
+.quelle {
+  color: #0078ab;
+}
+.link-hover:hover {
+    color: #c8ef4f !important;
+  }
+.text-bold {
+  font-weight: bold;
+}
+
+//Über uns
+.card_team {
+  li::before {
+    font-family: "FontAwesome";
+    content:"\f00C";
+    color:#0078ab;
+    padding: 0.5em;
+  }
+  i {
+    font-size: 25px;
+    color:#0078ab;
+  } 
+}
+.logo_team {
+  width: 30%;
+}
+//Über Kangoo Jumps
+.list-vorteile {
+  li::before {
+  font-family: "FontAwesome";
+  content:"\f00C";
+  color:#0078ab;
+  padding: 0.5em;
+}
+}
+//Preise
+.preise {
+  li::before {
+  font-family: "FontAwesome";
+  content:"\f00C";
+  color:#0078ab;
+  padding: 0.5em;
+}
+}
+h6 {
+  font-size: 2.5em;
+}
+.card-preis {
+  transition: all 1s;
+  &:hover {
+    transform:scale(1.1);
+  }
+}
+//Trainingsplan
+table {
+  font-size: 1em;
+  thead {
+    th {
+     border: 1px solid #0078ab;
+     text-align: center;
+    color:#0078ab;
+  }
+ } 
+  tbody {
+    tr {
+      th {
+        border: 1px solid #0078ab;
+        text-align: center;
+      }
+      td {
+          border: 1px solid #0078ab;
+          text-align: center;
+        }
+    }
+  }
+}
+h3{
+  color: #0078ab;
+}
+.list_mitbringen {
+  font-size: 1.4em;
+  .socks::before {
+    font-family: "FontAwesome";
+    content:"\f696";
+    color:#0078ab;
+    padding: 0.5em;
+    font-size: 1.5em;
+    vertical-align: -0.2em;
+  }
+  .water::before {
+    font-family: "FontAwesome";
+    content:"\f043";
+    color:#0078ab;
+    padding: 0.5em 0.7em;
+    font-size: 1.5em;
+    vertical-align: -0.2em;
+  }
+  .bra::before {
+    font-family: "FontAwesome";
+    content:"\f553";
+    color:#0078ab;
+    padding: 0.5em 0.4em;
+    font-size: 1.5em;
+    vertical-align: -0.2em;
+  }
+
+}
+//Kontakt
+.link-kontakt {
+  color:black;
+  &:hover {
+    color:#0078ab;
+  }
+}
+//Social Media
+.container_sm {
+  width: 390px;
+  height: 250px;
+  position: fixed;
+  right: -330px;
+  z-index: 10000;
+  top: 25%;
+}
+//kontaktbar
+.container_cb {
+  width: 390px;
+  height: 250px;
+  position: fixed;
+  right: -340px;
+  z-index: 10000;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  overflow: visible;
+  top: 41.5%;
+  &:hover {
+    transform: translateX(-320px);
+  }
+}
+.kontakticon {
+    width: 50px;
+    height: 50px;
+    background-color: #0078ab;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    align-content:center;
+    margin-top: 0.2em;
+    padding-top: 0.3em;
+    &:hover {
+      color: #c8ef4f; 
+    }
+  }
+.cb_text {
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: #c8ef4f;
+    border: 5px solid #0078ab;
+  }
+.cb_icons {
+    float: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .link-cb {
+    color: black;
+    &:hover {
+      color: #0078ab;
+    }
+  }
+@media screen and (max-width: 767px) {
+  .container_cb {
+    display: none;
+  }
+  .container_sm {
+    display: none;
+  }
+}
+
+//footer
+footer {
+  background-color:#0078ab;
+  color:white;
+}
+.icon {
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 2em;
+  &:hover {
+    color: #c8ef4f;
+  }
+}
