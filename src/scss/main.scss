@@ -119,10 +119,14 @@ nav  {
   font-size: 3em;
   color: #0078ab;
 }
-
+//quelle und links
 .quelle {
-  color: #0078ab;
+  color: red;
+ /*  &:hover {
+    color: black !important;
+  } */
 }
+
 .link-hover:hover {
     color: #c8ef4f !important;
   }
@@ -314,3 +318,9 @@ footer {
     color: #c8ef4f;
   }
 }
+
+/* .datenschutz-text {
+  font-size: 10em;
+  color:red !important;
+ 
+ } */
