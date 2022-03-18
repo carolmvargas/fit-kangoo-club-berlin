@@ -11229,7 +11229,10 @@ nav a i {
 }
 
 .quelle {
-  color: #0078ab;
+  color: red;
+  /*  &:hover {
+     color: black !important;
+   } */
 }
 
 .link-hover:hover {
@@ -11420,5 +11423,11 @@ footer {
 .icon:hover {
   color: #c8ef4f;
 }
+
+/* .datenschutz-text {
+  font-size: 10em;
+  color:red !important;
+
+ } */
 
 /*# sourceMappingURL=main.css.map */
