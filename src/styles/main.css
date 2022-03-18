@@ -11229,10 +11229,10 @@ nav a i {
 }
 
 .quelle {
-  color: red;
-  /*  &:hover {
-     color: black !important;
-   } */
+  color: #0078ab;
+}
+.quelle:hover {
+  color: black !important;
 }
 
 .link-hover:hover {
