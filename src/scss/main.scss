@@ -121,9 +121,9 @@ nav  {
 }
 //quelle und links
 .quelle {
-  color: red;
+  color: #0078ab;
   &:hover {
-    color: black !important;
+    color: black;
   }
 }
 
@@ -229,8 +229,8 @@ h3{
     font-size: 1.5em;
     vertical-align: -0.2em;
   }
-
 }
+
 //Kontakt
 .link-kontakt {
   color:black;
@@ -238,6 +238,7 @@ h3{
     color:#0078ab;
   }
 }
+
 //Social Media
 .container_sm {
   width: 390px;
@@ -245,8 +246,9 @@ h3{
   position: fixed;
   right: -330px;
   z-index: 10000;
-  top: 25%;
+  top: 20%;
 }
+
 //kontaktbar
 .container_cb {
   width: 390px;
@@ -259,7 +261,7 @@ h3{
   transition-timing-function: ease;
   transition-delay: 0s;
   overflow: visible;
-  top: 41.5%;
+  top: 50%;
   &:hover {
     transform: translateX(-320px);
   }
@@ -272,9 +274,9 @@ h3{
     font-size: 30px;
     color: white;
     text-align: center;
-    align-content:center;
-    margin-top: 0.2em;
-    padding-top: 0.3em;
+    
+    margin-top: 3px;
+    padding-top: 9px;
     &:hover {
       color: #c8ef4f; 
     }

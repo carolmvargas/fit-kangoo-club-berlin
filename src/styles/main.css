@@ -659,15 +659,15 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x) * -.5);
-  margin-left: calc(var(--bs-gutter-x) * -.5);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
 }
 .row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 }
 
@@ -6351,15 +6351,15 @@ textarea.form-control-lg {
 }
 
 .ratio-4x3 {
-  --bs-aspect-ratio: calc(3 / 4 * 100%);
+  --bs-aspect-ratio: 75%;
 }
 
 .ratio-16x9 {
-  --bs-aspect-ratio: calc(9 / 16 * 100%);
+  --bs-aspect-ratio: 56.25%;
 }
 
 .ratio-21x9 {
-  --bs-aspect-ratio: calc(9 / 21 * 100%);
+  --bs-aspect-ratio: 42.8571428571%;
 }
 
 .fixed-top {
@@ -11232,7 +11232,7 @@ nav a i {
   color: #0078ab;
 }
 .quelle:hover {
-  color: black !important;
+  color: black;
 }
 
 .link-hover:hover {
@@ -11345,7 +11345,7 @@ h3 {
   position: fixed;
   right: -330px;
   z-index: 10000;
-  top: 25%;
+  top: 20%;
 }
 
 .container_cb {
@@ -11359,7 +11359,7 @@ h3 {
   transition-timing-function: ease;
   transition-delay: 0s;
   overflow: visible;
-  top: 41.5%;
+  top: 50%;
 }
 .container_cb:hover {
   transform: translateX(-320px);
@@ -11373,9 +11373,8 @@ h3 {
   font-size: 30px;
   color: white;
   text-align: center;
-  align-content: center;
-  margin-top: 0.2em;
-  padding-top: 0.3em;
+  margin-top: 3px;
+  padding-top: 9px;
 }
 .kontakticon:hover {
   color: #c8ef4f;
